@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color-primary-100: #027313;
+    --color-primary-50: #0BBF26;
+    --color-primary-30: #014005;
+    --color-primary-10: #022601;
+
+    --color-gray-100: #0D0D0D;
+    --color-gray-50: #828282;
+    --color-gray-20: #E0E0E0;
+    --color-gray-0: #F2F2F2;
+
+    --font-size-32: 2rem;
+    --font-size-26: 1.625rem;
+    --font-size-22: 1.375rem;
+    --font-size-18: 1.125rem;
+    --font-size-16: 1rem;
+    --font-size-14: 0.875rem;
+    --font-size-12: 0.75rem;
+
+    --font-weight-bold: 700;
+    --font-weight-semi: 600;
+    --font-weight-regular: 400;
+}
+
+body{
+    background-color: var(--color-gray-100);
+    width: 100vw;
+}
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a, button, input, input::placeholder, label {
+    font-family: 'Source Code Pro', monospace;
+}
+
+button, a {
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+}
+
+ul{
+    list-style: none;
+}
