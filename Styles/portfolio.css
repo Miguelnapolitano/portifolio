@@ -1,0 +1,25 @@
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-top: 32px;
+
+    height: 100vh;
+}
+
+#portfolio > img {
+    height: 25px;
+    width: 300px;
+}
+
+#ul-cards{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    margin-top: 32px;
+}
+

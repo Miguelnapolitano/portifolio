@@ -1,0 +1,147 @@
+.card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+    width: 260px;
+    height: 260px;
+
+    position: relative;
+
+    border: 1px solid var(--color-primary-10);
+    border-radius: 24px 0 24px 0;
+
+}
+
+.card:hover{
+    transition: 0.4s;
+
+    border-radius: 24px 0 0 0;
+
+    scale: 1.08;
+
+    box-shadow: rgba(11, 191, 38, 0.3) 0px 19px 38px, rgba(11, 191, 38, 0.22) 0px 15px 12px;
+}
+
+
+.card-img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    filter: opacity(25%) grayscale(100%);
+    background-color: var(--color-gray-100);
+}
+
+.card:hover > .card-img{
+    transition: 0,4s;
+    filter: opacity(100%) grayscale(0%);
+    z-index: 0;
+}
+
+.div-card-inf{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card:hover > .div-card-inf{
+    transition: 0,4s;
+    display: none;
+}
+
+.card-title{
+    font-size: var(--font-size-22);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-gray-0);
+}
+
+.div-card-techs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card-techs{
+    scale: 0.65;
+}
+
+.div-card-hover{
+    height: 80px;
+    width: 100.8%;
+    padding: 16px;
+
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    z-index: -2;
+
+    background-color: var(--color-primary-10);
+
+    border: 1px solid var(--color-primary-30);
+    border-radius: 0 0 24px 0;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+
+    animation: show-inf 0.4s ease-in;
+}
+
+.div-card-hover > button{
+    background-color: var(--color-primary-100);
+    color: var(--color-gray-0);
+
+    font-size: var(--font-size-14);
+    font-weight: var(--font-weight-semi);
+
+    padding: 8px 16px;
+    border-radius: 8px;
+
+}
+
+.div-card-hover > button:hover{
+    background-color: var(--color-primary-50);
+    color: var(--color-gray-20);
+}
+
+.card:hover > .div-card-hover{
+    display: flex;
+}
+
+@keyframes show-inf {
+    0% { 
+        transform: translateY(-80px);
+    }
+    12.5% { 
+        transform: translateY(-70px);
+    }
+    25%{
+        transform: translateY(-60px);
+    }
+    32.5%{
+        transform: translateY(-50px);
+    }
+    50%{
+        transform: translateY(-40px);
+    }
+    62.5%{
+        transform: translateY(-30px);
+    }
+    75%{
+        transform: translateY(-20px);
+    }
+    87.5%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    } 
+}
