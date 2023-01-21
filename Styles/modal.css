@@ -10,11 +10,12 @@
 
     background-color: rgba(0,0,0, 0.8);
     height: 100vh;
+    width: 100vw;
 
 }
 
 .modal{
-    width: 80%;
+    width: 95%;
     max-width: 470px;
     height: fit-content;
 
@@ -27,6 +28,8 @@
     gap: 16px;
 
     border-radius: 8px;
+
+    animation: show-modal 0.5s normal;
 }
 
 .modal-header{
@@ -68,6 +71,9 @@
     line-height: 26px;
 
     padding: 0 8px;
+
+    height: 70%;
+    overflow-y: auto;
 }
 
 .modal-footer{
@@ -76,13 +82,14 @@
     justify-content: space-around;
 
     width: 100%;
+    height: fit-content;
 
     border-top: 1px solid var(--color-primary-50);
 
-    padding: 8px;
+    padding: 16px 8px;
 }
 
-.modal-footer > button {
+.modal-footer > a {
     background-color: var(--color-primary-100);
     color: var(--color-gray-0);
 
@@ -91,9 +98,56 @@
 
     padding: 4px 8px;
     border-radius: 8px;
+
 }
 
-.modal-footer > button:hover{
+.modal-footer > a:hover{
     background-color: var(--color-primary-50);
     color: var(--color-gray-20);
+}
+
+.disabled{
+    cursor:not-allowed;
+    filter: brightness(0%);
+}
+
+
+.hidden{
+    overflow: hidden;
+}
+
+@keyframes show-modal {
+    0% { 
+        transform:scale(0);
+    }
+    10% { 
+        transform:scale(0.1);
+    }
+    20%{
+        transform:scale(0.2);
+    }
+    30%{
+        transform:scale(0.3);;
+    }
+    40%{
+        transform:scale(0.4);;
+    }
+    50%{
+        transform:scale(0.5);
+    }
+    60%{
+        transform:scale(0.6);
+    }
+    70%{
+        transform:scale(0.7);
+    }
+    80%{
+        transform:scale(0.8);
+    }
+    90%{
+        transform:scale(0.9);
+    }
+    100%{
+        transform:scale(1);
+    } 
 }

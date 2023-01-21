@@ -4,8 +4,10 @@
     align-items: center;
     flex-direction: column;
 
-    width: 260px;
+    min-width: 260px;
     height: 260px;
+
+    margin-top: 16px;
 
     position: relative;
 
@@ -71,6 +73,7 @@
 
 .card-techs{
     scale: 0.65;
+    filter: brightness(150%);
 }
 
 .div-card-hover{

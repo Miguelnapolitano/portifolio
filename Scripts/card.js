@@ -1,46 +1,47 @@
 export const createCard = (id, name, bg, techs) => {
-    const cardList = document.querySelector("#ul-cards");
+  const cardList = document.querySelector("#ul-cards");
 
-    const card = document.createElement("li");
-    card.classList.add("card");
-    card.setAttribute("id", id);
+  const card = document.createElement("li");
+  card.classList.add("card");
+  card.setAttribute("id", id);
 
-    const bgImg = document.createElement("img");
-    bgImg.classList.add("card-img");
-    bgImg.src = bg;
+  const bgImg = document.createElement("img");
+  bgImg.classList.add("card-img");
+  bgImg.src = bg;
 
-    const divInf = document.createElement("div");
-    divInf.classList.add("div-card-inf");
+  const divInf = document.createElement("div");
+  divInf.classList.add("div-card-inf");
 
-    const cardTitle = document.createElement("h3");
-    cardTitle.classList.add("card-title");
-    cardTitle.innerText = name;
+  const cardTitle = document.createElement("h3");
+  cardTitle.classList.add("card-title");
+  cardTitle.innerText = name;
 
-    const divTechs = document.createElement("div");
-    divTechs.classList.add("div-card-techs");
+  const divTechs = document.createElement("div");
+  divTechs.classList.add("div-card-techs");
 
-    techs.forEach((tech) => {
+  techs.forEach((tech) => {
     const imgTechs = document.createElement("img");
     imgTechs.classList.add("card-techs");
     imgTechs.src = tech;
     divTechs.appendChild(imgTechs);
-    });
+  });
 
-    const divHover = document.createElement("div");
-    divHover.classList.add("div-card-hover");
+  const divHover = document.createElement("div");
+  divHover.classList.add("div-card-hover");
 
-    const h3Hover = document.createElement("h3");
-    h3Hover.innerText = name;
-    h3Hover.classList.add("card-title");
+  const h3Hover = document.createElement("h3");
+  h3Hover.innerText = name;
+  h3Hover.classList.add("card-title");
 
-    const buttonHover = document.createElement("button");
-    buttonHover.innerText = "Saiba mais";
-    
-    divInf.append(cardTitle, divTechs)
+  const buttonHover = document.createElement("button");
+  buttonHover.innerText = "Saiba mais";
+  buttonHover.setAttribute("id", "more");
 
-    divHover.append(h3Hover, buttonHover);
+  divInf.append(cardTitle, divTechs);
 
-    card.append(bgImg, divInf, divHover);
+  divHover.append(h3Hover, buttonHover);
 
-    cardList.append(card)
+  card.append(bgImg, divInf, divHover);
+
+  cardList.append(card);
 };
