@@ -1,8 +1,9 @@
-const dataBase = [
+export const dataBase = [
     {
+        id: 1,
         name: "Hamburgueria V2",
-        ano: 2023,
-        techs: ["html", "css", "JavaScript", "react"],
+        bgImg: "./Assets/burguer_kenzie.png",
+        techs: ["./Assets/html.png", "./Assets/css.png", "./Assets/js.png", "./Assets/react.png"],
         description: "A Hamburgueria V2 é um marketplace de uma lanchonete. Este projeto foi desenvolvido em react e usa algumas bibliotecas como: Styled Compenents e react toastfy.",
         links:{
             repository: "https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-hamburgueria-v2-Miguelnapolitano",

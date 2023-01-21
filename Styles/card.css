@@ -22,6 +22,7 @@
     scale: 1.08;
 
     box-shadow: rgba(11, 191, 38, 0.3) 0px 19px 38px, rgba(11, 191, 38, 0.22) 0px 15px 12px;
+
 }
 
 
@@ -33,12 +34,13 @@
     z-index: -1;
     filter: opacity(25%) grayscale(100%);
     background-color: var(--color-gray-100);
+    border-radius: 24px 0 24px 0;
 }
 
 .card:hover > .card-img{
-    transition: 0,4s;
     filter: opacity(100%) grayscale(0%);
     z-index: 0;
+    border-radius: 24px 0 0 0;
 }
 
 .div-card-inf{
@@ -50,7 +52,7 @@
 }
 
 .card:hover > .div-card-inf{
-    transition: 0,4s;
+    transition: 0.4s;
     display: none;
 }
 
