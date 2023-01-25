@@ -55,3 +55,8 @@ button, a {
 ul{
     list-style: none;
 }
+
+.ds-none{
+    display: none;
+
+}

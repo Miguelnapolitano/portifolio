@@ -1,6 +1,7 @@
 import { dataBase } from "./data.js";
 import { createCard } from "./card.js";
 import { modal } from "./modal.js";
+import { dropDown } from "./nav.js";
 
 const cards = () => {
     dataBase.reverse().map((project) => {
@@ -73,5 +74,5 @@ const writeText = (id, interval) => {
 writeText("text-about", 22000)
 writeText("home-text", 10000)
 
-
+dropDown()
 

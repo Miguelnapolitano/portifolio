@@ -9,13 +9,18 @@ header {
     background-color: var(--color-gray-100);
     box-shadow: rgba(11, 191, 38, 0.25) 0px 8px 10px, rgba(11, 191, 38, 0.22) 0px 10px 10px;
 
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
 }
 
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    position: relative;
 
 }
 
@@ -32,6 +37,9 @@ header > nav > button {
     width: 25px;
     height: 25px;
     background-color:transparent;
+
+    position: relative;
+    z-index: 6;
 }
 
 header > nav > button > img {
@@ -41,7 +49,7 @@ header > nav > button > img {
     background-color:transparent;
 }
 
-.div-anchors{
+/* .div-anchors{
     display: none;
     display: flex;
     flex-direction: column;
@@ -58,15 +66,10 @@ header > nav > button > img {
     background-color: var(--color-gray-100);
     box-shadow: rgba(11, 191, 38, 0.25) 0px 8px 10px, rgba(11, 191, 38, 0.22) 0px 10px 10px;
 
-}
-
-.ds-none{
-    display: none;
-
-}
+} */
 
 
-.div-anchors > a {
+/* .div-anchors > a {
     font-size: var(--font-size-26);
     font-weight: var(--font-weight-bold);
     color: var(--color-primary-50);
@@ -76,4 +79,4 @@ header > nav > button > img {
     text-shadow: rgba(11, 191, 38, 0.25) 0px 5px 10px, rgba(11, 191, 38, 0.22) 0px 15px 5px;
 
     border-bottom: 1px solid var(--color-primary-50);
-}
+} */
