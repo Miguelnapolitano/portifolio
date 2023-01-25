@@ -18,7 +18,7 @@
     max-width: 470px;
 }
 
-.home-inf  h2 {
+#name {
     font-size: var(--font-size-32);
     font-weight: var(--font-weight-bold);
     color: var(--color-gray-0);
@@ -32,12 +32,22 @@
     width: 100%;
 }
 
-.home-inf  p {
+#home-text {
     font-size: var(--font-size-14);
     font-weight: var(--font-weight-regular);
     color: var(--color-primary-50);
     width: 100%;
+    height: 80px;
     line-height: 26px;
+
+}
+
+#home-text:after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: blink .7s infinite;
+    color: var(--color-primary-50);
 }
 
 .home-badges{
@@ -55,6 +65,7 @@
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   animation: show-icon 3s ease;
 }
 
 .div-icon > img{
@@ -68,15 +79,32 @@
     color: var(--color-primary-100);
 }
 
-/* .home-foto{
-    width: 260px;
-    background-color: var(--color-gray-0);
-    height: 300px;
-    overflow-y: hidden;
-} */
-
 .home-foto > img{
     width: 100%;
 
     background-color: transparent;
+}
+
+@keyframes blink{
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+
+@keyframes show-icon {
+    0% { 
+        filter: opacity(0);    
+    }
+    25% { 
+        filter: opacity(0.25);
+    }
+    50%{
+        filter: opacity(0.5);
+    }
+    100%{
+        filter: opacity(1);
+    } 
 }

@@ -3,7 +3,7 @@ import { createCard } from "./card.js";
 import { modal } from "./modal.js";
 
 const cards = () => {
-    dataBase.map((project) => {
+    dataBase.reverse().map((project) => {
         createCard(project.id, project.name, project.bgImg, project.techs)
     })
 
@@ -44,3 +44,34 @@ openModal()
        }
     })    
 }
+
+const typeWrite = (elemento) => {
+    const textoArray = elemento.innerHTML.split('');
+
+    elemento.innerHTML = ' ';
+    textoArray.forEach(function(letra, i){   
+      
+    setTimeout(function(){
+        elemento.innerHTML += letra;
+    }, 30 * i)
+
+  });
+}
+
+const writeText = (id, interval) => {
+    const text = (document.querySelector(`#${id}`));
+
+    typeWrite(text)
+    
+    setInterval(() => {
+        
+        typeWrite(text)
+            
+    }, interval)
+}
+
+writeText("text-about", 22000)
+writeText("home-text", 10000)
+
+
+

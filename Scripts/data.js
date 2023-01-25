@@ -43,7 +43,7 @@ export const dataBase = [
         description: "A Hamburgueria Kenzie simula um marketplace de uma lanchonete. O projeto foi desenvolvido em TypeScript (TS) associado ao React e usa algumas bibliotecas como Context-APi, Axios, Styled-Components, React-Router-Dom, React-hook-form, yup, React Toastfy, etc. Com certeza foi muito desafiador, pois é uma aplicação de média complexidade, consideranto o tempo hábil para o desenvolvimento, e com uma linguagem nova, o TS. Mas como sempre foi um prazer imenso conhecer mais essa ferramenta de desenvolvimento.",
         links:{
             repository: "https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-hamburgueria-v2-Miguelnapolitano",
-            linkedin:"https://www.linkedin.com/posts/miguel-felipe-napolitano-70407776_ol%C3%A1-pessoal-mais-uma-vez-aqui-trazendo-activity-7002282030679908352-mN_f?utm_source=share&utm_medium=member_desktop",
+            linkedin:"",
             site:"https://react-entrega-hamburgueria-v2-miguelnapolitano.vercel.app/",
             img:"./Assets/hamburgueria_V2.png"
         }
